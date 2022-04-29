@@ -1,0 +1,747 @@
+*{
+    font-family: system-ui, sans-serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background-image: url(../img/wheat.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    padding: 7.35vh 4.3vw 12.25vh 4.3vw;
+}
+
+.header-navigation-items{
+    display: flex;
+    list-style: none;
+}
+
+.header-navigation-item {
+    text-align: center;
+}
+
+.header-navigation {
+    margin-bottom: 30vh;
+}
+
+.header-navigation-link{
+    text-decoration: none;
+}
+
+.header-intro{
+    font-weight: 200;
+}
+
+.highlighted-text{
+    color: #e2ba7b;
+    font-weight: 400;
+}
+
+.header-button {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-right: 0.248vh solid #65aa44;
+    border-left: 0.248vh solid #65aa44;
+}
+
+.company-group-block {
+    background-color: #fbf9fa;
+}
+
+.block-title {
+    border: none;
+    padding-left: 2vw;
+    padding-bottom: 2.45vh;
+    border-left: 1.5vw solid #65aa44;
+    border-bottom: 0.3vh solid #65aa44;
+    font-weight: 400;
+}
+
+.block-text {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.block-text:last-child {
+    margin-bottom: 0;
+}
+
+.block-subtitle {
+    color: #65aa44;
+}
+
+.services-block {
+    padding: 7.35vh 4.3vw 2.45vh 4.3vw;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.675vh;
+}
+
+.services-list-link {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 7vw;
+    height: 12.25vh;
+}
+
+.services-list-text {
+    font-weight: 700;
+}
+
+.transportation {
+    background-image: url(../img/icon/car.png);
+}
+
+.purchase {
+    background-image: url(../img/icon/cart.png);
+}
+
+.financing {
+    background-image: url(../img/icon/dollar.png);
+}
+
+.storage {
+    background-image: url(../img/icon/pie.png);
+}
+
+.selling {
+    background-image: url(../img/icon/planet.png);
+}
+
+.price-table-block{
+    background-color: #fbf9fa;
+}
+
+.price-table{
+    text-align: center;
+    border-collapse:collapse;
+}
+
+.price-table-row{
+    border: 1px solid #e2ba7b;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5vh 0;
+}
+
+.price-table-row-left{
+    border: 1px solid #e2ba7b;
+    text-align: center;
+    vertical-align: middle;
+    empty-cells: show;
+    padding: 0.5vh 0;
+}
+
+.price-table-comment{
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.benefits-list {
+    margin-left: 6.510vw;
+}
+
+.benefits-list-item {
+    color: #e2ba7b;
+}
+
+.benefits-list-text {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.news {
+    background-color: #fbf9fa;
+}
+
+.article {
+    display: flex;
+    box-shadow: 0 0 10px 0 #D3D3D3;
+    background-color: #fff;
+}
+
+.article-img {
+    width: 15.625vw;
+}
+
+.article-title {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.article-date {
+    color: #808080;
+    font-weight: 400;
+}
+
+.article-descr {
+    font-weight: 200;
+}
+
+    .footer {
+        background-color: #f5f5f5;
+    }
+
+    .contacts-title {
+        font-weight: 800;
+    }
+    
+    .contacts-links {
+        display: flex;
+    }
+    
+    .contacts-link {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .linkedin {
+        background-image: url(../img/network/linkedin.png);
+    }
+    
+    .email {
+        background-image: url(../img/network/envelope.png);
+    }
+    
+    .facebook {
+        background-image: url(../img/network/fb_icon.png);
+    }
+
+    .contacts-subtitle {
+        font-weight: 700;
+    }
+    
+    .contacts-item {
+        font-weight: 200;
+    }
+
+@media screen and (max-width: 768px){ 
+    .header {
+        background-position: bottom;
+        padding: 7.35vh 4.3vw 12.25vh 4.3vw;
+        background-size: cover;
+    }
+
+    .header-navigation-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 3.1vw;
+    }
+
+    .header-navigation-item{
+        flex: 0 0 30%;
+    }
+
+    .header-navigation-item:nth-child(-n+3){
+        margin-bottom: 7.35vh;
+    }
+
+    .header-intro{
+        font-size: 3.3vw;
+        text-align: center;
+        margin-bottom: 14.7vh;
+    }
+
+    .header-button{
+        width: 25vw;
+        margin: auto;
+        font-size: 2.8vw;
+        height: 7vh;
+    }
+
+    .company-group-block{
+        padding: 7.35vh 4.3vw 3vh 4.3vw;
+    }
+   
+    .block-title {
+        margin-bottom: 3vh;
+    }
+
+    .block-wrapper {
+        margin-bottom: 3vh;
+    }
+
+    .block-text {
+        font-size: 2.65vw;
+        margin-bottom: 3vh;
+    }
+
+    .block-subtitle {
+        font-size: 3.5vw;
+        margin-bottom: 3vh;
+    }
+
+    .services-block {
+        padding: 3vh 4.3vw 2.45vh 4.3vw;
+    }
+
+    .services-list-text {
+        font-size: 2.9vw;
+    }
+
+    .services-list-link {
+        margin-right: 7vw;
+    }
+
+    .services-list-item {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    
+    .price-table-block{
+        display: none;
+    }
+
+    .benefit-block {
+        padding: 2.45vh 4.3vw 9.8vh 4.3vw;
+    }
+
+    .benefits-list-text {
+        font-size: 2.65vw;
+        margin-bottom: 7.35vh;
+    }
+
+    .news{
+        padding: 2.45vh 4.3vw 2.45vh 4.3vw;
+    }
+
+    .article{
+        margin-bottom: 3.125vh;
+        padding: 1.302vw;
+    }
+
+    .article-img{
+        margin-right: 3.906vw;
+    }
+
+    .article-title{
+        font-size: 2.5vw;
+    }
+
+    .article-date{
+        font-size: 2.65vw;
+    }
+
+    .article-descr{
+        font-size: 2.6vw;
+    }
+
+    .footer {
+        padding: 3.65vh 4.3vw 3.65vh 4.3vw;
+    }
+
+    .contacts-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-subtitle {
+        font-size: 3vw;
+    }
+    
+    .contacts-item {
+        font-size: 2.5vw;
+        display: block;
+    }
+    
+    .contacts {
+        display: grid;
+        grid-template-columns: 32.552vw 52.083vw;
+        margin-bottom: 3vh;
+    }
+
+    .contacts-link {
+        width: 5.23vw;
+        height: 9.8vh; 
+        margin-right: 2.8vw;
+    }
+    
+    .contacts-link:last-child {
+        margin-right: 0;
+    }
+
+    .contacts:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .header {
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .header-navigation-items{
+        justify-content: flex-end;
+    }
+
+    .header-navigation-item {
+        font-weight: 200;
+    }
+
+    .header-intro{
+        text-align: left;
+        margin-bottom: 4.9vh;
+        width: 60.101vw;
+    }
+
+    .blocks-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .block-wrapper{
+        flex: 0 0 30%;
+    } 
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .header{
+        padding: 7.35vh 2.520vw 12.25vh 4.3vw;
+    }
+
+    .header-navigation-item {
+        flex: 0 0 13%;
+    }
+
+    .header-navigation-items {
+        font-size: 2.5vw;
+    }
+
+    .header-intro {
+        font-size: 3.4vw;
+        margin-left: 30.303vw;
+    }
+
+    .header-button {
+        width: 23.407vw;
+        font-size: 1.5vw;
+        margin-left: 30.303vw;
+        height: 5vh;
+    }
+
+    .company-group-block {
+        padding: 3vh 4.3vw 6vh 4.3vw;
+    }
+
+    .block-title {
+        font-size: 4.941vw;
+        margin-bottom: 2vh;
+    }
+    
+    .block-text {
+        font-size: 1.9vw;
+        margin-bottom: 3vh;
+    }
+
+    .block-subtitle {
+        font-size: 3.5vw;
+    }
+
+    .services-block{
+        padding: 3vh 4.3vw 6vh 4.3vw;
+    }
+
+    .services-list{
+        display: inline-grid;
+        grid-template-columns: 50vw 50vw;
+    }
+
+    .services-list-item:last-child{
+        margin-bottom: 0;
+    }
+
+    .services-list-text {
+        flex: 0 0 80%;
+        font-size: 2.2vw;
+    }
+
+    .services-list-link{
+        flex: 0 0 15%;
+    }
+
+    .price-table-block {
+        padding: 3vh 4.3vw 6vh 4.3vw;
+    }
+
+    .price-table {
+        margin-bottom: 4vh;
+        font-size: 1.9vw;
+    }
+    
+    .price-table-row {
+        width: 11.5vw;
+        height: 12vh;
+    }
+    
+    .price-table-row-left {
+        width: 7vw;
+        height: 12vh;
+    }
+
+    .benefit-block {
+        padding: 3vh 4.3vw 6vh 4.3vw;
+    }
+
+    .benefits-list-text {
+        font-size: 1.9vw;
+        margin-bottom: 3vh;
+    }
+
+  .news {
+        padding: 3vh 4.3vw 6vh 4.3vw;
+    }
+    
+    .article {
+        margin-bottom: 6.125vh;
+        padding: 2.45vh 1.302vw;
+    }
+    
+    .article-img{
+            margin-right: 3.906vw;
+        }
+    
+    .article-title {
+        font-size: 1.8vw;
+    }
+    
+    .article-date {
+        font-size: 1.9vw;
+        margin-bottom: 5vh;
+    }
+    
+    .article-descr {
+        font-size: 1.9vw;
+    }
+
+.footer {
+    padding: 3vh 4.3vw 6vh 4.3vw;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 32.552vw 52.083vw;
+    margin-bottom: 3vh;
+}
+
+.contacts:last-child {
+    margin-bottom: 0;
+}
+
+.contacts-links {
+    margin-bottom: 7vh;
+}
+
+.contacts-link {
+    width: 2.601vw;
+    height: 6vh;
+    margin-right: 0.650vw;
+}
+
+.contacts-link:last-child {
+    margin-right: 0;
+}
+
+.contacts-subtitle {
+    font-size: 2vw;
+}
+
+.contacts-item {
+    font-size: 1.5vw;
+    display: block;
+}      
+}
+
+@media screen and (min-width: 991px){
+    .header {
+        padding: 7.35vh 3.646vw 12.25vh 4.3vw;
+    }
+
+    .header-navigation-items {
+        font-size: 1.9vw;
+    }
+
+    .header-navigation-item {
+        flex: 0 0 13%;
+    }
+
+    .header-intro{
+        margin-left: 36.303vw;
+        font-size: 2.5vw;
+    }
+
+    .header-button{
+        margin-left: 36.303vw;
+        width: 15.625vw;
+        height: 7.5vh;
+    }
+
+    .company-group-block{
+        padding: 7.35vh 3.646vw 2.25vh 4.3vw;
+    }
+
+    .block-title {
+        font-size: 2.119vw;
+        margin-bottom: 6.125vh;
+    }
+    
+    .block-text {
+        font-size: 1.09vw;
+        margin-bottom: 7.35vh;
+    }
+
+    .block-subtitle {
+        font-size: 2vw;
+    }
+
+    .services-block{
+        padding: 7.35vh 3.646vw 2.25vh 4.3vw;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin-bottom: 0;
+    }
+
+    .services-list-item{
+        justify-content: space-around;
+    }
+
+    .services-list-text {
+        font-size: 1.4vw;
+    }
+
+    .price-table-block{
+        padding: 7.35vh 3.646vw 12.25vh 4.3vw;
+    }
+
+    .price-table-comment {
+        font-size: 1.09vw;
+    }
+
+    .price-table {
+        margin-bottom: 4vh;
+        font-size: 1.09vw;
+    }
+    
+    .price-table-row {
+        width: 22.704vw;
+        height: 7.5vh;
+    }
+    
+    .price-table-row-left {
+        width: 16.145vw;
+        height: 7.5vh;
+    }
+
+    .benefit-block {
+        padding: 7.35vh 3.646vw 12.25vh 4.3vw;
+    }
+
+    .benefits-list-text {
+        font-size: 1.09vw;
+    }
+
+    .news {
+        padding: 7.35vh 3.646vw 12.25vh 4.3vw;
+    }
+
+    .articles-wrapper{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-between;
+    }
+    
+    .article {
+        margin-bottom: 6.125vh;
+        padding: 2.45vh 1.302vw;
+    }
+    
+    .article-img{
+        width: 12.109vw;
+        height: 38vh;
+        margin-right: 1.009vw;
+    }
+    
+    .article-title {
+        font-size: 0.85vw;
+        margin-bottom: 0.75vh;
+    }
+    
+    .article-date {
+        font-size: 0.85vw;
+        margin-bottom: 0.75vh;
+    }
+    
+    .article-descr {
+        font-size: 0.8vw;
+    }
+
+    .footer {
+        padding: 3vh 4.3vw 6vh 4.3vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contacts-title{
+        font-size: 1.2vw;
+        margin-bottom: 1.5vh;
+    }
+
+    .contacts-links {
+        flex-direction: column;
+    }
+    
+    .contacts-link {
+        width: 2.018vw;
+        height: 3vh;
+        margin-bottom: 2.25vh;
+    }
+    
+    .contacts-link:last-child{
+        margin-bottom: 0;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 0 0 30%;
+    }
+
+    .contacts-column{
+        flex: 0 0 5%;
+        flex-direction: column;
+    }
+
+    .contacts-subtitle {
+        font-size: 1.2vw;
+        flex: 0 0 35%;
+    }
+    
+    .contacts-item {
+        font-size: 0.95vw;
+        display: block;
+    }
+}
